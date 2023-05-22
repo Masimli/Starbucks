@@ -1,0 +1,24 @@
+@import 'colors';
+@import 'style';
+
+* {
+    font-family: StarFont;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    @include nav-style;
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: transparent !important;
+}
+
+
+footer {
+    padding: 5px;
+    @include footer-style;
+}
