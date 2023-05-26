@@ -11,8 +11,6 @@ body {
   padding: 0;
 }
 
-@import 'colors';
-
 .navbar {
   margin: 0 !important;
   padding: 0 !important;
@@ -807,177 +805,97 @@ footer #copyRighText {
   color: rgba(0, 0, 0, 0.4117647059);
 }
 
-#atMenu {
-  box-sizing: border-box;
-  border-bottom: 4px solid rgb(0, 98, 65);
+.giftCards {
+  padding: 30px;
 }
 
-.menu {
-  width: 100%;
+.card-header {
   display: flex;
-  padding: 40px;
-  max-width: 1200px;
-}
-
-.leftside-menu {
-  max-width: 250px;
-  margin: 0 140px 0 40px;
-}
-
-.leftside-menu h1 {
-  font-size: 22px;
-}
-
-.leftside-menu li {
-  margin: 15px 0;
-  list-style: none;
-  color: #757575;
-}
-
-.rightside-menu {
-  width: 100%;
-}
-
-h2 {
-  margin-top: 30px;
-}
-
-.drinks {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
 }
-.drinks div {
-  width: 300px;
-  margin: 2px;
-}
-.drinks img {
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  margin: 15px;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-.drinks a {
+
+.card-header h1 {
   font-size: 20px;
-  text-decoration: none;
-  color: black;
-  white-space: nowrap;
 }
 
-.Food {
+.item img {
+  border-radius: 20px;
+}
+
+.item img:hover {
+  transform: translateY(-2px);
+}
+
+owl-nav button {
+  border-radius: 50% !important;
+  background-color: aqua !important;
+}
+
+.owl-prev {
+  left: 0;
+  top: 30%;
+  height: 40px;
+  width: 0px;
+  border-radius: 50% !important;
+  position: absolute;
+  font-size: 50px !important;
+}
+
+.owl-next {
+  right: 30px;
+  top: 30%;
+  background-color: white !important;
+  height: 40px;
+  width: 0px;
+  border-radius: 50% !important;
+  position: absolute;
+  font-size: 50px !important;
+}
+
+.inline-note {
+  padding: 0 20px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.Food div {
-  width: 300px;
-  margin: 2px;
-}
-.Food img {
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  margin: 15px;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-.Food a {
-  font-size: 20px;
-  text-decoration: none;
-  color: black;
-  white-space: nowrap;
+  justify-content: left;
+  background-color: rgb(212, 233, 226);
 }
 
-.home-coffee {
+.inline-note button {
+  margin: 5px;
+  max-width: 180px;
+  color: white;
+  text-align: center;
+  border-radius: 20px;
+  padding: 3px 10px;
+  background-color: black;
+  border-color: black;
+  border-width: 1px;
+  border-style: solid;
+  transition: 0.3s;
+}
+
+.inline-note button:hover {
+  opacity: 0.7;
+}
+
+.inline-note div {
+  margin: 20px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.home-coffee div {
-  width: 300px;
-  margin: 2px;
-}
-.home-coffee img {
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  margin: 15px;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-.home-coffee a {
-  font-size: 20px;
-  text-decoration: none;
-  color: black;
-  white-space: nowrap;
+  justify-content: space-around;
 }
 
-.Merchandise {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.Merchandise div {
-  width: 300px;
-  margin: 2px;
-}
-.Merchandise img {
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  margin: 15px;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-.Merchandise a {
-  font-size: 20px;
-  text-decoration: none;
-  color: black;
-  white-space: nowrap;
+.inline-note h1 {
+  font-size: 25px;
+  margin-right: 10px;
 }
 
-.GiftCards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.GiftCards div {
-  width: 300px;
-  margin: 2px;
-}
-.GiftCards img {
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  margin: 15px;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-.GiftCards a {
-  font-size: 20px;
-  text-decoration: none;
-  color: black;
-  white-space: nowrap;
+.inline-note span {
+  margin-left: 10px;
 }
 
-@media (max-width: 1012px) {
-  .leftside-menu {
-    display: none;
-  }
-  .menu {
+@media (max-width: 900px) {
+  .inline-note div {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 90px;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
-  .menu img {
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
-    margin: 15px;
-    -o-object-fit: contain;
-       object-fit: contain;
-  }
-}/*# sourceMappingURL=menuStyle.css.map */
+}/*# sourceMappingURL=giftCardsStyle.css.map */

@@ -88,6 +88,9 @@ body {
   align-items: center;
   margin-right: 40px;
 }
+.navbar .nav-right-side a {
+  text-decoration: none;
+}
 .navbar .nav-right-side button {
   display: flex;
   justify-content: center;

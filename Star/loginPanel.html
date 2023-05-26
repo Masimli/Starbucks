@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="giftCardsStyle.css">
+    <link rel="stylesheet" href="loginStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -14,13 +17,13 @@
     <nav id="navbar" class="navbar bg-body-tertiary">
         <div class="container-fluid">
             <div class="navMenu">
-                <div class="navLogo"><a href="index.html"><img class="logo" src="img files/icon.png" alt=""></a>
-                </div>
-                <div class="navLinks">
-                    <ul>
-                        <li><a href="menu.html">Menu</a></li>
-                        <li><a href="#">Rewards</a></li>
-                        <li><a href="giftCards.html">Gift Cards</a></li>
+              <div class="navLogo"><a href="index.html"><img class="logo" src="img files/icon.png" alt=""></a>
+              </div>
+              <div class="navLinks">
+                  <ul>
+                      <li id="atMenu"><a href="menu.html">Menu</a></li>
+                      <li id="atRewards"><a href="giftCards.html">Rewards</a></li>
+                      <li id="atGift"><a href="#">Gift Cards</a></li>
                     </ul>
                 </div>
             </div>
@@ -29,8 +32,8 @@
                 <div class="find-store">
                   <a href=""><i class="fa-solid fa-location-dot"></i> Fina a store</a>
                 </div>
-                <a href="loginPanel.html"><button id="sign">Sign in</button></a>
-                <a href="RegPanel.html"><button id="join">Join now</button></a>
+                <button id="sign">Sign in</button>
+                <button id="join">Join now</button>
               </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -45,15 +48,15 @@
                     <a class="nav-link" href="menu.html">Menu</a>
                   </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Rewards</a>
+                  <a class="nav-link" href="giftCards.html">Rewards</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="giftCards.html">Gift Cards</a>
+                    <a class="nav-link" href="#">Gift Cards</a>
                   </li>
                   <hr>
                   <div class="nav-right-side-offcanvas">
-                    <a href="loginPanel.html"><button id="sign">Sign in</button></a>
-                    <a href="RegPanel.html"><button id="join">Join now</button></a>
+                    <button id="sign">Sign in</button>
+                    <button id="join">Join now</button>
                     <div class="find-store">
                       <a href=""><i class="fa-solid fa-location-dot"></i> Fina a store</a>
                     </div>
@@ -65,48 +68,18 @@
         </div>
       </nav>
 
-
-<div class="Main-Cards">
-    
-    <div class="card1">
-        <div class="card-text">
-            <h1>Find your adventure</h1>
-            <p>Starbucks® Summer Game is here! Play for your chance to win—more than 10 million prizes are up for grabs!*</p>
-            <button>Play now</button>
+      <div class="loginPanel">
+        <h1>Sign in or create an account</h1>
+        <div class="container">
+          <p>* indicates required field</p>
+          <form id="loginForm" onsubmit="return validateForm()">
+            <input type="text" id="username" placeholder="* Username or Email">
+            <input type="password" id="password" placeholder="* Password">
+            <input type="submit" value="Sign In">
+          </form>
+          <div id="error"></div>
         </div>
-        <img src="img files/mainPageImgs/1.jpg">
-    </div>
-
-    <div class="card2">
-        <img src="img files/mainPageImgs/2.jpg">
-        <div class="card-text">
-            <h1>For your enjoy-mint</h1>
-            <p>Hooray for our newest cooler-than-cool Chocolate Java Mint Frappuccino® blended beverage.</p>
-            <button>Order now</button></div>
-        </div>
-
-        <div class="card3">
-          <div class="card-text">
-              <h1>Macadamia just dropped</h1>
-              <p>Introducing the White Chocolate Macadamia Cream Cold Brew with toasted cookie crumbles.</p>
-              <button>Order now</button>
-            </div>
-            <img src="img files/mainPageImgs/3.jpg">
-          </div>
-          <div class="card4">
-            <img src="img files/mainPageImgs/4.jpg">
-            <div class="card-text">
-                <h1>Sweetest of the hive</h1>
-                <p>Buzzing into the café, an adorable new Bumblebee Cake Pop dipped in chocolaty icing.</p>
-                <button>Order now</button></div>
-            </div>
-</div>
-
-<div class="main-randomText">
- <p>*NO PURCHASE NECESSARY. Participating stores only. Starbucks Partners (employees) are not eligible to win prizes. Ends 6/18/23. To play and for Official Rules visit starbuckssummergame.com.
-  Entrants can receive a maximum of 2 plays per day, plus, bonus opportunities to earn additional plays.</p>
-<p>**For every Starbucks eGift in our Military Appreciation category sold May 1–31, we’ll donate $5 to Blue Star Families and Operation Gratitude to foster connection and improve the well-being of our military community. Donations will be evenly divided between the two organizations. Learn more at bluestarfam.org and operationgratitude.com.</p>
-</div>
+      </div>    
 
 <footer>
   <hr>
@@ -186,8 +159,8 @@
   </div>
 </footer>
 
-
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 

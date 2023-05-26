@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="menuStyle.css">
+    <link rel="stylesheet" href="giftCardsStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -19,8 +21,8 @@
               <div class="navLinks">
                   <ul>
                       <li id="atMenu"><a href="menu.html">Menu</a></li>
-                      <li id="atRewards"><a href="#">Rewards</a></li>
-                      <li id="atGift"><a href="giftCards.html">Gift Cards</a></li>
+                      <li id="atRewards"><a href="giftCards.html">Rewards</a></li>
+                      <li id="atGift"><a href="#">Gift Cards</a></li>
                     </ul>
                 </div>
             </div>
@@ -45,10 +47,10 @@
                     <a class="nav-link" href="menu.html">Menu</a>
                   </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Rewards</a>
+                  <a class="nav-link" href="giftCards.html">Rewards</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="giftCards.html">Gift Cards</a>
+                    <a class="nav-link" href="#">Gift Cards</a>
                   </li>
                   <hr>
                   <div class="nav-right-side-offcanvas">
@@ -65,97 +67,107 @@
         </div>
       </nav>
 
-
-<div class="menu">
-<div class="leftside-menu">
-    <ul>
-      <h1>Drinks</h1>
-      <li>Oleato™</li>
-      <li>Hot Coffees</li>
-      <li>Hot Teas</li>
-      <li>Hot Drinks</li>
-      <li>Frappuccino® Blended Beverages</li>
-      <li>Cold Coffees</li>
-      <li>Iced Teas</li>
-      <li>Cold Drinks</li>
-    </ul>
-    <ul>
-      <h1>Food</h1>
-      <li>Hot Breakfast</li>
-      <li>Oatmeal & Yogurt</li>
-      <li>Bakery</li>
-      <li>Lunch</li>
-      <li>Snacks & Sweets</li>
-    </ul>
-    <ul>
-      <h1>At Home Coffee</h1>
-      <li>Whole Bean</li>
-      <li>VIA® Instant</li>
-    </ul>
-    <ul>
-      <h1>Merchandise</h1>
-      <li>Cold Cups</li>
-      <li>Tumblers</li>
-      <li>Mugs</li>
-      <li>Water Bottles</li>
-      <li>Other</li>
-    </ul>
-    <ul>
-      <h1>Gift Cards</h1>
-      <li>Happy Birthday</li>
-      <li>Thank You</li>
-      <li>Traditional</li>
-    </ul>
+<div class="giftCardCarousels">
+  <div class="giftCards">
+    <div class="card-header"> <h1>FEATURED</h1> <h1>Sea all</h1></div>
+      <div class="owl-carousel owl-theme">
+        <div class="item"><img src="img files/giftCardimgs/card3.jpg"></div>
+        <div class="item"><img src="img files/giftCardimgs/card8.jpg"></div>
+        <div class="item"><img src="img files/giftCardimgs/card5.jpg"></div>
+        <div class="item"><img src="img files/giftCardimgs/card4.jpg"></div>
+        <div class="item"><img src="img files/giftCardimgs/card6.jpg"></div>
+        <div class="item"><img src="img files/giftCardimgs/card2.jpg"></div>
+        <div class="item"><img src="img files/giftCardimgs/card7.jpg"></div>
+      </div>
+  </div>
+  <div class="inline-note">
+    <div class="note">
+      <h1>Got a gift card?</h1>
+      <p>Earns 2★Stars per $1</p>
+      <span>
+        <button>Add or Reload</button>
+        <button>Check balance</button>  
+      </span>
+    </div>
+  </div>
+  <div class="giftCards">
+    <div class="card-header"> <h1>BIRTHDAY</h1> <h1>Sea all</h1></div>
+    <div class="owl-carousel owl-theme">
+      <div class="item"><img src="img files/giftCardimgs/card5.jpg"></div>
+      <div class="item"><img src="img files/giftCardimgs/card8.jpg"></div>
+      <div class="item"><img src="img files/giftCardimgs/card3.jpg"></div>
+      <div class="item"><img src="img files/giftCardimgs/card4.jpg"></div>
+    </div>
+  </div>
+  <div class="giftCards">
+    <div class="card-header"> <h1>THANK YOU</h1> <h1>Sea all</h1></div>
+    <div class="owl-carousel owl-theme">
+      <div class="item"><img src="img files/giftCardimgs/card7.jpg"></div>
+      <div class="item"><img src="img files/giftCardimgs/card3.jpg"></div>
+      <div class="item"><img src="img files/giftCardimgs/card8.jpg"></div>
+      <div class="item"><img src="img files/giftCardimgs/card4.jpg"></div>
+    </div>
+  </div>
+  <div class="giftCards">
+    <div class="card-header"> <h1>CELEBRATION</h1> <h1>Sea all</h1></div>
+    <div class="owl-carousel owl-theme">
+      <div class="item"><img src="img files/giftCardimgs/card4.jpg"></div>
+      <div class="item"><img src="img files/giftCardimgs/card6.jpg"></div>
+      <div class="item"><img src="img files/giftCardimgs/card3.jpg"></div>
+      <div class="item"><img src="img files/giftCardimgs/card1.jpg"></div>
+      <div class="item"><img src="img files/giftCardimgs/card7.jpg"></div>
+    </div>
+  </div>
+  <div class="giftCards">
+    <div class="card-header"> <h1>BEST FRIEND'S DAY</h1> <h1>Sea all</h1></div>
+    <div class="owl-carousel owl-theme">
+      <div class="item"><img src="img files/giftCardimgs/card2.jpg"></div>
+      <div class="item"><img src="img files/giftCardimgs/card4.jpg"></div>
+      <div class="item"><img src="img files/giftCardimgs/card8.jpg"></div>
+      <div class="item"><img src="img files/giftCardimgs/card3.jpg"></div>
+      <div class="item"><img src="img files/giftCardimgs/card1.jpg"></div>
+      <div class="item"><img src="img files/giftCardimgs/card6.jpg"></div>
+    </div>
+  </div>
+  <div class="giftCards">
+    <div class="card-header"> <h1>FATHER'S DAY</h1> <h1>Sea all</h1></div>
+    <div class="owl-carousel owl-theme">
+      <div class="item"><img src="img files/giftCardimgs/card7.jpg"></div>
+      <div class="item"><img src="img files/giftCardimgs/card8.jpg"></div>
+      <div class="item"><img src="img files/giftCardimgs/card3.jpg"></div>
+      <div class="item"><img src="img files/giftCardimgs/card6.jpg"></div>
+    </div>
+  </div>
+  <div class="giftCards">
+    <div class="card-header"> <h1>GRADUATION</h1> <h1>Sea all</h1></div>
+    <div class="owl-carousel owl-theme">
+      <div class="item"><img src="img files/giftCardimgs/card6.jpg"></div>
+      <div class="item"><img src="img files/giftCardimgs/card3.jpg"></div>
+      <div class="item"><img src="img files/giftCardimgs/card8.jpg"></div>
+      <div class="item"><img src="img files/giftCardimgs/card5.jpg"></div>
+    </div>
+  </div>
+  <div class="giftCards">
+    <div class="card-header"> <h1>MILITARY APPRECIATION</h1> <h1>Sea all</h1></div>
+    <div class="owl-carousel owl-theme">
+      <div class="item"><img src="img files/giftCardimgs/card7.jpg"></div>
+      <div class="item"><img src="img files/giftCardimgs/card4.jpg"></div>
+      <div class="item"><img src="img files/giftCardimgs/card1.jpg"></div>
+      <div class="item"><img src="img files/giftCardimgs/card6.jpg"></div>
+    </div>
+  </div>
+</div>      
+<div class="inline-note">
+  <div class="note">
+    <h1>GIFT CARD SUPPORT</h1>
+    <p>Use the links below to manage eGifts you have sent or received, or view our full Card Terms & Conditions.</p>
+    <span>
+      <button>eGift Support</button>
+      <button>See Terms & Conditions</button>  
+      <button>eGift FAQs</button> 
+    </span>
+  </div>
 </div>
-
-<div class="rightside-menu">
-  <h2>Menu</h2>
-  <br>
-  <br>
-  <h2>Drinks</h2>
-  <hr>
-  <div class="drinks">
-    <div id="oleato"><a href="#"><img src="img files/menuImgs/cup2.jfif"> Oleato™ </a></div>
-    <div id="hot-coffees"><a href="#"><img src="img files/menuImgs/cup4.png"> Hot Coffees</a></div>
-    <div id="hot-teas"><a href="#"><img src="img files/menuImgs/cup9.jfif"> Hot Teas</a></div>
-    <div id="hot-drinks"><a href="#"><img src="img files/menuImgs/cup3.jpg"> Hot Drink</a></div>
-    <div id="frappuccino"><a href="#"><img src="img files/menuImgs/cup5.jpg"> Frappuccino® Blended Beverages</a></div>
-    <div id="cold-coffees"><a href="#"><img src="img files/menuImgs/cup10.png"> Cold Coffees</a></div>
-    <div id="iced-teas"><a href="#"><img src="img files/menuImgs/cup7.jfif"> Iced Teas</a></div>
-    <div id="cold-drinks"><a href="#"><img src="img files/menuImgs/cup8.jpg"> Cold Drinks</a></div>
-  </div>
-  <h2>Food</h2>
-  <hr>
-  <div class="Food">
-    <div id="hot-breakfast"><a href="#"><img src="img files/menuImgs/food1.jpg"> Hot Breakfast </a></div>
-    <div id="yogurt"><a href="#"><img src="img files/menuImgs/food2.jpg"> Ouatmeal & Yogurt</a></div>
-    <div id="bakery"><a href="#"><img src="img files/menuImgs/food3.jpg"> Bakery</a></div>
-    <div id="lunch"><a href="#"><img src="img files/menuImgs/food4.jpg"> Lunch</a></div>
-    <div id="snacks"><a href="#"><img src="img files/menuImgs/food5.jpg"> Snacks and Sweets</a></div>
-  </div>
-  <h2>At Home Coffee</h2>
-  <hr>
-  <div class="home-coffee">
-    <div id="wholebean"><a href="#"><img src="img files/menuImgs/whole1.jpeg">Whole Bean </a></div>
-    <div id="instant"><a href="#"><img src="img files/menuImgs/whole2.jpg">VIA® Instant</a></div>
-  </div>
-  <h2>Merchandise</h2>
-  <div class="Merchandise">
-    <div id="coldcups"><a href="#"><img src="img files/menuImgs/bottle5.jpg">Cold Cups</a></div>
-    <div id="Tumblers"><a href="#"><img src="img files/menuImgs/bottle2.jpg">Tumblers</a></div>
-    <div id="mugs"><a href="#"><img src="img files/menuImgs/bottle4.jpg">Mugs</a></div>
-    <div id="waterbottles"><a href="#"><img src="img files/menuImgs/bottle1.jpg">Water Bottles</a></div>
-    <div id="other"><a href="#"><img src="img files/menuImgs/bottle3.jpg">Other</a></div>
-  </div>
-  <h2>Gift Cards</h2>
-  <div class="GiftCards">
-    <div id="happybirthday"><a href="#"><img src="img files/menuImgs/food1.jpg">Happy Birthday</a></div>
-    <div id="thankyou"><a href="#"><img src="img files/menuImgs/food2.jpg">Thank You</a></div>
-    <div id="Traditional"><a href="#"><img src="img files/menuImgs/food5.jpg">Traditional</a></div>
-  </div>
-</div>
-</div>
-      
 
 <footer>
   <hr>
@@ -235,8 +247,8 @@
   </div>
 </footer>
 
-
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 
